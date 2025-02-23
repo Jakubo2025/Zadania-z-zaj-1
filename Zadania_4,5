@@ -1,0 +1,29 @@
+# Zadania-z-zaj-1
+
+# Zad.4
+# Funkcja obliczająca długość przeciwprostokątnej
+przeciwprostokatna <- function(a, b) {
+  # a i b to długości przyprostokątnych
+  c <- sqrt(a^2 + b^2)  # Twierdzenie Pitagorasa
+  return(c)
+}
+
+# Zad.5
+# Funkcja kalkulatora
+kalkulator <- function(x, y, operacja) {
+  if (operacja == "+") {
+    return(x + y)
+  } else if (operacja == "-") {
+    return(x - y)
+  } else if (operacja == "*") {
+    return(x * y)
+  } else if (operacja == "/") {
+    if (y == 0) {
+      return("Błąd: Nie można dzielić przez zero!")
+    } else {
+      return(x / y)
+    }
+  } else {
+    return("Błąd: Nieznana operacja!")
+  }
+}
